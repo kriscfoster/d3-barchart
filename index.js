@@ -23,8 +23,10 @@ const x = d3.scaleBand()
   .range([margin.left, width - margin.right])
   .padding(0.1)
 
+  console.log(typeof x)
+
 const y = d3.scaleLinear()
-  .domain([0, 100]).nice()
+  .domain([0, 100])
   .range([height - margin.bottom, margin.top])
 
 svg
